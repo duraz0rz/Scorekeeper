@@ -23,7 +23,8 @@
 
         <controls:Pivot HorizontalAlignment="Left" Title="pivot" VerticalAlignment="Top" Height='768' Grid.RowSpan='2' Width='480'>
             <controls:PivotItem Header="item1">
-                <Grid/>
+                <Grid HorizontalAlignment='Left'/>
+
             </controls:PivotItem>
             <controls:PivotItem Header="item2">
                 <Grid/>
