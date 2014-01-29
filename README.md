@@ -1,6 +1,9 @@
 Scorekeeper
 ===========
 
-Simple score-keeping app for WP8.
+Simple score-keeping app for WP8. Basically practice with MVVM and TDD.
 
-No fancy MVVM here. Just getting acquainted with VS 2012 Express for WP.
+Going to include:
+* Score keeping for as many players as you can! (Probably will have a limit for practicality sake)
+* Score history
+* Fast resume
