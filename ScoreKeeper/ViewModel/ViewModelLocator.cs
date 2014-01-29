@@ -42,14 +42,14 @@ namespace ScoreKeeper.ViewModel
             ////    SimpleIoc.Default.Register<IDataService, DataService>();
             ////}
 
-            SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<ScorekeeperViewModel>();
         }
 
-        public MainViewModel Main
+        public ScorekeeperViewModel Main
         {
             get
             {
-                return ServiceLocator.Current.GetInstance<MainViewModel>();
+                return ServiceLocator.Current.GetInstance<ScorekeeperViewModel>();
             }
         }
         

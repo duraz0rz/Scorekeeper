@@ -12,7 +12,8 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True"
+    DataContext="{Binding Main, Source={StaticResource Locator}}">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
@@ -21,12 +22,12 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <controls:Pivot HorizontalAlignment="Left" Title="pivot" VerticalAlignment="Top" Height='768' Grid.RowSpan='2' Width='480'>
-            <controls:PivotItem Header="item1">
+        <controls:Pivot HorizontalAlignment="Left" Title="Scorekeeper" VerticalAlignment="Top" Height='768' Grid.RowSpan='2' Width='480'>
+            <controls:PivotItem Header="Scores">
                 <Grid HorizontalAlignment='Left'/>
 
             </controls:PivotItem>
-            <controls:PivotItem Header="item2">
+            <controls:PivotItem Header="History">
                 <Grid/>
             </controls:PivotItem>
         </controls:Pivot>
