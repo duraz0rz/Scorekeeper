@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,8 +19,10 @@ namespace ScoreKeeper
         public PlayerEvent Type;
     }
 
-    public class Player
+    public class Player : ObservableObject
     {
+        private int p;
+
         public String Name { get; set; }
         public int Score { get; private set; }
         public Stack<PlayerHistoryItem> History { get; private set;}
@@ -27,6 +30,11 @@ namespace ScoreKeeper
         public Player()
         {
             History = new Stack<PlayerHistoryItem>();
+        }
+
+        public Player(int score)
+        {
+            this.Score = score;
         }
 
         public void AddScore(int toAdd)
