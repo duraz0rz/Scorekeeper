@@ -19,7 +19,7 @@ namespace ScoreKeeper.ViewModel
 
         public void AddPlayer(string name, int score = 0)
         {
-            Players.Add(new Player(20) { Name = name });
+            Players.Add(new Player(score) { Name = name });
         }
     }
 }

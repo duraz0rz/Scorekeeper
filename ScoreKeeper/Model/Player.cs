@@ -27,14 +27,10 @@ namespace ScoreKeeper
         public int Score { get; private set; }
         public Stack<PlayerHistoryItem> History { get; private set;}
 
-        public Player()
-        {
-            History = new Stack<PlayerHistoryItem>();
-        }
-
-        public Player(int score)
+        public Player(int score = 0)
         {
             this.Score = score;
+            History = new Stack<PlayerHistoryItem>();
         }
 
         public void AddScore(int toAdd)
